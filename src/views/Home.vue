@@ -50,7 +50,7 @@ export default {
   background-size: cover;
   background-position: bottom;
   width: 100%;
-  height: 650px;
+  height: 95vh;
 }
 
 .home .headline .title-box {
