@@ -29,6 +29,8 @@ export default {
 <style scoped>
 
 .wrapper {
+
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

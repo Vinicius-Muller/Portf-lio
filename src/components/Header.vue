@@ -68,10 +68,27 @@ export default {
   },
 
   mounted() {
+    let MobileNavs = document.querySelectorAll("li#navs")
+    let logo = document.querySelector("img.logo")
+    let projects = document.querySelector(".box")
+
     window.onscroll = () => {
-      this.show = false
+        this.show = false
+      }
+
+      projects.addEventListener("click", () => {
+        this.show = false
+      })
+      
+      logo.addEventListener("click", () => {
+        this.show = false
+      });
+      MobileNavs.forEach(MobileNavs => {
+        MobileNavs.addEventListener("click", () => {
+          this.show = false
+        })
+      })
     }
-  }
 }
 </script>
 
@@ -79,6 +96,7 @@ export default {
 
 .menu-box.show {
   transform: translateX(0%);
+  z-index: 2;
 }
 
 .header {
@@ -166,7 +184,7 @@ a.router-link-exact-active {
   flex-direction: column;
   background: white;
   width: 300px;
-  height: 70vh;
+  height: 60vh;
   top:0;
   right: 0;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.7);

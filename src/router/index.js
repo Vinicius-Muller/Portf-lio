@@ -5,6 +5,7 @@ import Resume from '../views/Resume.vue'
 import Projects from '../views/Projects.vue'
 import Contact from '../views/Contact.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
