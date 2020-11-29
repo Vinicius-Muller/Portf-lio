@@ -166,7 +166,7 @@ a.router-link-exact-active {
   flex-direction: column;
   background: white;
   width: 300px;
-  height: 510px;
+  height: 70vh;
   top:0;
   right: 0;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.7);
@@ -196,7 +196,7 @@ a.router-link-exact-active {
 
 @media screen and (max-width:1100px) {
   .header {
-    position: fixed;
+    position:initial;
     overflow: visible;
   }
 
