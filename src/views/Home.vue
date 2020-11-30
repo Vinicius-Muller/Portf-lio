@@ -8,7 +8,7 @@
         <h1>Vinícius Muller</h1>
         <div class="box">
         <div class="bar"></div>
-        <router-link to="/projects">Projetos</router-link>
+        <a href="#projects">Projetos</a>
     </div>
       </div>
 
