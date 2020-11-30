@@ -3,7 +3,7 @@
     <h1>Fale Comigo</h1>
   <div class="spacer"></div>
 
-  <form>
+  <form  @submit="sendEmail" method="POST">
     <label for="name">Nome</label>
     <input type="text" name="name" v-model="name">
 
@@ -15,7 +15,7 @@
 
     <div class="box">
       <div class="bar"></div>
-      <div class="button">enviar</div>
+      <input type="submit" value="Enviar" class="button"/>
     </div>
   </form>
 
@@ -24,38 +24,40 @@
 </template>
 
 <script>
-
+import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
+init("user_A5kmGKpDuk0hKaJmI3iZ7");
 
 export default {
 name: "Form",
+data() {
+    return {
+      name: '',
+      email: '',
+      message: ''
+    }
+  },
+  methods: {
+    sendEmail(e) {
+      try {
+        emailjs.sendForm('service_g0p8r7n', 'template_okq16u8', e.target,
+        'user_A5kmGKpDuk0hKaJmI3iZ7', {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        })
 
-computed: {
-  name: {
-    get() {
-      return this.$store.state.form.name
+      } catch(error) {
+          console.log({error})
+      }
+      // Reset form field
+      this.name = ''
+      this.email = ''
+      this.message = ''
     },
-    set(value) {
-      this.$store.commit("UPDATE_FORM", {name: value})
-    }
-  },
-    email: {
-    get() {
-      return this.$store.state.form.email
-    },
-    set(value) {
-      this.$store.commit("UPDATE_FORM", {email: value})
-    }
-  },
-    message: {
-    get() {
-      return this.$store.state.form.message
-    },
-    set(value) {
-      this.$store.commit("UPDATE_FORM", {message: value})
-    }
   }
 }
-}
+
 </script>
 
 <style scoped>
@@ -136,17 +138,12 @@ input {
   z-index: 1;
   color: #ec5b53;
   font-size: 1.7rem;
-  top: 5%;
-  left: 35%;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .box:hover .bar {
   width: 100%;
-}
-
-.box:hover .button {
-  color: white;
 }
 
 @media screen and (max-width:1100px) {
@@ -163,10 +160,6 @@ input {
 
   .wrapper .form-wrapper form {
     width: 80%;
-  }
-
-  .box .button {
-    left: 28%;
   }
 }
 
