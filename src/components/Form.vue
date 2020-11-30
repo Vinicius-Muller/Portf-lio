@@ -13,9 +13,9 @@
     <label for="message">Menssagem/Assunto</label>
     <textarea class="textarea" name="message" v-model="message"></textarea>
 
-    <div class="box">
+    <div class="box" :class="{opacity}">
       <div class="bar"></div>
-      <input type="submit" value="Enviar" class="button"/>
+      <input  type="submit" value="Enviar" class="button"/>
     </div>
   </form>
 
@@ -34,7 +34,8 @@ data() {
     return {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      opacity: false
     }
   },
   methods: {
@@ -46,6 +47,8 @@ data() {
           email: this.email,
           message: this.message
         })
+
+        this.opacity = true
 
       } catch(error) {
           console.log({error})
@@ -61,6 +64,10 @@ data() {
 </script>
 
 <style scoped>
+
+.opacity {
+  opacity: 0 !important;
+}
 .form-wrapper {
   display: flex;
   flex-direction: column;
@@ -122,6 +129,7 @@ input {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 20px;
+  transition: 0.3s all;
 }
 
 .bar {
