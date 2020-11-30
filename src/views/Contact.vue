@@ -3,17 +3,17 @@
     <Form />
       
     <div class="icon-box">
-      <router-link class="icons" to="">
+      <a class="icons" href="https://www.linkedin.com/in/vinicius-muller-b2b5471a9/">
         <img src="@/assets/icons/linkedin.svg" alt="Entre em contato no Linked in">
-      </router-link>
+      </a>
 
-      <router-link class="icons" to="">
+      <a class="icons" href="https://twitter.com/Vinnymuller_">
         <img src="@/assets/icons/twitter.svg" alt="Entre em contato no Twitter">
-      </router-link>
+      </a>
 
-      <router-link class="icons" to="">
+      <a class="icons" href="https://api.whatsapp.com/send?phone=5551981010207&text=Olá">
         <img src="@/assets/icons/whatsapp.svg" alt="Entre em contato no whatsapp">
-      </router-link>
+      </a>
     </div>
   </section>
 </template>
