@@ -3,7 +3,7 @@
     <p>Vinícius Muller</p>
   </div>
 </template>
-
+ 
 <script>
 export default {
   name: "Footer"
