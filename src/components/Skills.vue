@@ -18,7 +18,7 @@
           <br>
           <li>JavaScript/ES6</li>
         </ul>
-        <router-link to="#">CONFIRA</router-link>
+        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">CONFIRA</a>
       </div>
     </div>
     <div class="card">
@@ -35,7 +35,7 @@
           <br>
           <li>API´s</li>
         </ul>
-        <router-link to="#">CONFIRA</router-link>
+        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">CONFIRA</a>
       </div>
     </div>
     <div class="card">
@@ -52,7 +52,7 @@
           <br>
           <li>Bootstrap</li>
         </ul>
-        <router-link to="#">CONFIRA</router-link>
+        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">CONFIRA</a>
       </div>
     </div>
   </div>

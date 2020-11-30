@@ -9,7 +9,7 @@
     <nav class="nav-web">
       <ul>
         <li id="navs">
-          <router-link to="/resume">Currículo</router-link>
+          <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Currículo</a>
         </li>
 
         <li id="navs">
