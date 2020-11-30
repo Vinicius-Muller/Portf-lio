@@ -3,7 +3,7 @@
     <h1>Fale Comigo</h1>
   <div class="spacer"></div>
 
-  <form  @submit="sendEmail" method="POST">
+  <form  @submit.prevent="sendEmail" method="POST">
     <label for="name">Nome</label>
     <input type="text" name="name" v-model="name">
 
