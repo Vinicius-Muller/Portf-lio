@@ -214,7 +214,6 @@ a.router-link-exact-active {
 
 @media screen and (max-width:1100px) {
   .header {
-    position:none;
     overflow: visible;
   }
 

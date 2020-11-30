@@ -4,16 +4,16 @@
   <div class="spacer"></div>
 
   <form  @submit.prevent="sendEmail" method="POST">
-    <label for="name">Nome</label>
-    <input type="text" name="name" v-model="name">
+    <label for="name" >Nome</label>
+    <input type="text" name="name" v-model="name" required>
 
     <label for="email">Email</label>
-    <input type="email" name="email" v-model="email">
+    <input type="email" name="email" v-model="email" required>
 
     <label for="message">Menssagem/Assunto</label>
-    <textarea class="textarea" name="message" v-model="message"></textarea>
+    <textarea class="textarea" name="message" v-model="message" required></textarea>
 
-    <div class="box" v-if="opacity">
+    <div class="box" v-if="send">
       <div class="bar"></div>
       <input  type="submit" value="Enviar" class="button"/>
     </div>
@@ -37,8 +37,7 @@ data() {
       name: '',
       email: '',
       message: '',
-      opacity: true,
-      thanks: false
+      send: true,
     }
   },
   methods: {
@@ -51,7 +50,7 @@ data() {
           message: this.message
         })
 
-        this.opacity = false
+        this.send = false
 
       } catch(error) {
           console.log({error})
