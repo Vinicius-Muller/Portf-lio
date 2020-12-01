@@ -7,12 +7,8 @@
         <img src="@/assets/icons/linkedin.svg" alt="Get in contact on Linked in">
       </a>
 
-      <a class="icons" href="https://twitter.com/Vinnymuller_">
-        <img src="@/assets/icons/twitter.svg" alt="Get in contact on Linked in">
-      </a>
-
-      <a class="icons" href="https://api.whatsapp.com/send?phone=5551981010207&text=Olá">
-        <img src="@/assets/icons/whatsapp.svg" alt="Get in contact on WhatsApp">
+      <a class="icons" href="https://github.com/Vinicius-Muller">
+        <img src="@/assets/icons/github.svg" alt="Get in contact on Github">
       </a>
     </div>
   </section>
@@ -44,6 +40,7 @@ export default {
 
 .icon-box {
   display: flex;
+  justify-content:space-evenly;
   width: 40%;
 }
 
@@ -59,7 +56,6 @@ export default {
   }
   .icon-box {
     width: 90%;
-    justify-content: space-evenly;
   }
 }
 
