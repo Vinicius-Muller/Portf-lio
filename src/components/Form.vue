@@ -1,24 +1,24 @@
 <template>
   <div class="form-wrapper">
-    <h1>Fale Comigo</h1>
+    <h1>Lets Talk</h1>
   <div class="spacer"></div>
 
   <form  @submit.prevent="sendEmail" method="POST">
-    <label for="name" >Nome</label>
+    <label for="name" >Name</label>
     <input type="text" name="name" v-model="name" required>
 
     <label for="email">Email</label>
     <input type="email" name="email" v-model="email" required>
 
-    <label for="message">Menssagem/Assunto</label>
+    <label for="message">Message/Subject</label>
     <textarea class="textarea" name="message" v-model="message" required></textarea>
 
     <div class="box" v-if="send">
       <div class="bar"></div>
-      <input  type="submit" value="Enviar" class="button"/>
+      <input  type="submit" value="Send" class="button"/>
     </div>
 
-    <p v-else>Obrigado pelo contato</p>
+    <p v-else>Thanks for the contact</p>
   </form>
 
   </div>

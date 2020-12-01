@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Projects from '../views/Projects.vue'
+import ProjectsPage from '../views/Projects.vue'
 import Contact from '../views/Contact.vue'
 
 
@@ -16,7 +16,7 @@ const routes = [
   {
     path: '/projects',
     name: 'Projects',
-    component: Projects
+    component: ProjectsPage
   },
   {
     path: '/contact',

@@ -1,10 +1,10 @@
 <template>
   <section class="wrapper">
-    <p>Venha evoluir junto comigo!</p>
+    <p>Come evolve with me!</p>
     
     <div class="box">
       <div class="bar"></div>
-    <router-link to="/contact">Contato</router-link>
+    <router-link to="/contact">Contact</router-link>
     </div>
   </section>
 </template>
@@ -60,6 +60,7 @@ a {
   z-index: 1;
   color: #ec5b53;
   font-size: 1.7rem;
+  width:100%;
   top: 5%;
   left: 33%;
   text-decoration: none;

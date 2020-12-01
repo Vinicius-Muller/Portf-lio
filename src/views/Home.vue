@@ -8,7 +8,7 @@
         <h1>Vinícius Muller</h1>
         <div class="box">
         <div class="bar"></div>
-        <a href="#projects">Projetos</a>
+        <a href="#projects">Projects</a>
     </div>
       </div>
 
@@ -105,6 +105,7 @@ a {
   z-index: 1;
   color: #ec5b53;
   font-size: 1.7rem;
+  width: 100%;
   top: 5%;
   left: 28%;
   text-decoration: none;

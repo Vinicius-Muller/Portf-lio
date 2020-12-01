@@ -12,13 +12,11 @@
       <div class="content">
         <h2>FrontEnd</h2>
         <ul>
-          <li>HTML5</li>
-          <br>
-          <li>CSS3</li>
+          <li>HTML5/CSS3</li>
           <br>
           <li>JavaScript/ES6</li>
         </ul>
-        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">CONFIRA</a>
+        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Courses</a>
       </div>
     </div>
     <div class="card">
@@ -29,13 +27,11 @@
       <div class="content">
         <h2>BackEnd</h2>
         <ul>
-          <li>Node.js</li>
+          <li>Node</li>
           <br>
-          <li>Wordpress</li>
-          <br>
-          <li>API´s</li>
+          <li>PHP</li>
         </ul>
-        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">CONFIRA</a>
+        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Courses</a>
       </div>
     </div>
     <div class="card">
@@ -49,10 +45,8 @@
           <li>Vue</li>
           <br>
           <li>React</li>
-          <br>
-          <li>Bootstrap</li>
         </ul>
-        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">CONFIRA</a>
+        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Courses</a>
       </div>
     </div>
   </div>

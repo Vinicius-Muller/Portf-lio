@@ -4,15 +4,15 @@
       
     <div class="icon-box">
       <a class="icons" href="https://www.linkedin.com/in/vinicius-muller-b2b5471a9/">
-        <img src="@/assets/icons/linkedin.svg" alt="Entre em contato no Linked in">
+        <img src="@/assets/icons/linkedin.svg" alt="Get in contact on Linked in">
       </a>
 
       <a class="icons" href="https://twitter.com/Vinnymuller_">
-        <img src="@/assets/icons/twitter.svg" alt="Entre em contato no Twitter">
+        <img src="@/assets/icons/twitter.svg" alt="Get in contact on Linked in">
       </a>
 
       <a class="icons" href="https://api.whatsapp.com/send?phone=5551981010207&text=Olá">
-        <img src="@/assets/icons/whatsapp.svg" alt="Entre em contato no whatsapp">
+        <img src="@/assets/icons/whatsapp.svg" alt="Get in contact on WhatsApp">
       </a>
     </div>
   </section>

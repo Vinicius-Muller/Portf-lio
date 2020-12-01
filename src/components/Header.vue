@@ -9,15 +9,15 @@
     <nav class="nav-web">
       <ul>
         <li id="navs">
-          <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Currículo</a>
+          <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Resume</a>
         </li>
 
         <li id="navs">
-          <router-link to="/projects">Projetos</router-link>
+          <router-link to="/projects">Projects</router-link>
         </li>
 
         <li id="navs">
-          <router-link to="/contact">Contato</router-link>
+          <router-link to="/contact">Contact</router-link>
         </li>
       </ul>
     </nav>
@@ -30,15 +30,15 @@
       <nav class="nav-mobile">
              <ul>
         <li id="navs">
-          <router-link to="/resume">Currículo</router-link>
+          <router-link to="/resume">Resume</router-link>
         </li>
 
         <li id="navs">
-          <router-link to="/projects">Projetos</router-link>
+          <router-link to="/projects">Projects</router-link>
         </li>
 
         <li id="navs">
-          <router-link to="/contact">Contato</router-link>
+          <router-link to="/contact">Contact</router-link>
         </li>
       </ul>
       </nav>

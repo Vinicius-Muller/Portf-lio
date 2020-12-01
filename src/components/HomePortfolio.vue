@@ -1,46 +1,48 @@
 <template>
   <div id="projects" class="wrapper">
+    <h1 class="title">Projects</h1>
+    <div class="spacer"></div>
     <section class="content">
       <div class="img-box ranek">
-        <img class="project" src="@/assets/projects/ranek.png" alt="Projeto ranek feito em vue">    
+        <img class="project" src="@/assets/projects/ranek.png" alt="Ranek was a project made on vue.js">    
         <img class="framework" src="@/assets/icons/vue.png" alt="Vue">
         <div class="button-box">
           <div class="box">
             <div class="bar"></div>
-              <router-link to="/contact">Visite agora</router-link>
+              <router-link to="/contact">Take a look</router-link>
             </div>
           </div>
         </div>
 
       <div class="img-box happy">
-        <img class="project" src="@/assets/projects/happy.png" alt="Projeto ranek feito em React">    
+        <img class="project" src="@/assets/projects/happy.png" alt="Happy was a project made on React.js">    
         <img class="framework" src="@/assets/icons/react.svg" alt="React">
         <div class="button-box">
           <div class="box">
             <div class="bar"></div>
-              <router-link to="/contact">Visite agora</router-link>
+              <router-link to="/contact">Take a look</router-link>
             </div>
           </div>
       </div>
 
       <div class="img-box techno">
-        <img class="project" src="@/assets/projects/techno.png" alt="Projeto ranek feito em Vue">    
+        <img class="project" src="@/assets/projects/techno.png" alt="Techno was a project made on Vue.js">    
         <img class="framework" src="@/assets/icons/vue.png" alt="Vue">
         <div class="button-box">
           <div class="box">
             <div class="bar"></div>
-              <router-link to="/contact">Visite agora</router-link>
+              <router-link to="/contact">Take a look</router-link>
             </div>
           </div>
       </div>
 
       <div class="img-box proffy">
-        <img class="project" src="@/assets/projects/proffy.png" alt="Projeto ranek feito em React">    
+        <img class="project" src="@/assets/projects/proffy.png" alt="Proffy was a project made on React.js">    
         <img class="framework" src="@/assets/icons/react.svg" alt="React">
         <div class="button-box">
           <div class="box">
             <div class="bar"></div>
-              <router-link to="/contact">Visite agora</router-link>
+              <router-link to="/contact">Take a look</router-link>
             </div>
           </div>
       </div>
@@ -64,8 +66,23 @@ export default {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
+}
+
+.title {
+  color:white;
+  font-size: 2.5rem;
+  padding-bottom: 5px;
+}
+
+.spacer {
+  width:150px;
+  height: 5px;
+  background: white;
+  margin-bottom: 20px;
 }
 
 .content {
@@ -76,7 +93,7 @@ export default {
   "techno proffy";
   grid-gap: 200px;
   max-width: 90%;
-  margin-top: 150px;
+  margin-top: 50px;
   padding-bottom: 60px;
 }
 
@@ -212,6 +229,7 @@ a {
   z-index: 1;
   color: #ec5b53;
   font-size: 1.7rem;
+  width: 100%;
   top: 5%;
   left: 23%;
   text-decoration: none;
