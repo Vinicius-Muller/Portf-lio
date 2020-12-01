@@ -8,7 +8,7 @@
         <h1>Vinícius Muller</h1>
         <div class="box">
         <div class="bar"></div>
-        <a href="#projects">Projects</a>
+        <router-link :to="{name: 'Projects'}" hash="#projects">Projects</router-link>
     </div>
       </div>
 

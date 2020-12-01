@@ -31,7 +31,10 @@ const router = new VueRouter({
   routes,
 
   scrollBehavior() {
+    setTimeout(()=> {
+      
     return window.scrollTo({top:0, behavior: "smooth" })
+    },300)
   }
 })
 
