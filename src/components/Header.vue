@@ -9,7 +9,7 @@
     <nav class="nav-web">
       <ul>
         <li id="navs">
-          <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Resume</a>
+          <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf" target="_blank">Resume</a>
         </li>
 
         <li id="navs">
@@ -30,7 +30,7 @@
       <nav class="nav-mobile">
              <ul>
         <li id="navs">
-          <router-link to="/resume">Resume</router-link>
+          <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf">Resume</a>
         </li>
 
         <li id="navs">

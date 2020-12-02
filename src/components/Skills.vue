@@ -16,7 +16,7 @@
           <br>
           <li>JavaScript/ES6</li>
         </ul>
-        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Courses</a>
+        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf" target="_blank">Courses</a>
       </div>
     </div>
     <div class="card">
@@ -31,7 +31,7 @@
           <br>
           <li>PHP</li>
         </ul>
-        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Courses</a>
+        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf" target="_blank">Experience</a>
       </div>
     </div>
     <div class="card">
@@ -46,7 +46,7 @@
           <br>
           <li>React</li>
         </ul>
-        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusmuller.pdf" target="_blank">Courses</a>
+        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf" target="_blank">Knowledge</a>
       </div>
     </div>
   </div>
