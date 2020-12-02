@@ -3,7 +3,7 @@
     <Form />
       
     <div class="icon-box">
-      <a class="icons" href="https://www.linkedin.com/in/vinicius-muller-b2b5471a9/">
+      <a class="icons" href="https://www.linkedin.com/in/vin%C3%ADcius-muller-b2b5471a9/">
         <img src="@/assets/icons/linkedin.svg" alt="Get in contact on Linked in">
       </a>
 
