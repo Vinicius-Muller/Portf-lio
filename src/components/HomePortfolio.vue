@@ -3,66 +3,36 @@
     <h1 class="title">Projects</h1>
     <div class="spacer"></div>
     <section class="content">
-      <div class="img-box ranek">
-        <img class="project" src="@/assets/projects/ranek.png" alt="Ranek was a project made on vue.js">    
-        <img class="framework" src="@/assets/icons/vue.png" alt="Vue">
-        <div class="button-box">
+      <div v-for="(project, index) in projects.projects" :key="index">
+        <div class="img-box">
+          <img class="background" :src="require(`@/assets/projects/${project.backgroundImage}`)" :alt="project.projectDescription">
+          <img class="project" :src="require(`@/assets/projects/${project.projectImage}`)" :alt="project.projectDescription" >
+          <img class="framework" :src="require(`@/assets/icons/${project.frameworkImage}`)" :alt="project.frameworkName" >
+          <div class="button-box">
           <div class="box">
             <div class="bar"></div>
               <router-link to="/contact">Take a look</router-link>
             </div>
           </div>
         </div>
-
-      <div class="img-box happy">
-        <img class="project" src="@/assets/projects/happy.png" alt="Happy was a project made on React.js">    
-        <img class="framework" src="@/assets/icons/react.svg" alt="React">
-        <div class="button-box">
-          <div class="box">
-            <div class="bar"></div>
-              <router-link to="/contact">Take a look</router-link>
-            </div>
-          </div>
       </div>
-
-      <div class="img-box techno">
-        <img class="project" src="@/assets/projects/techno.png" alt="Techno was a project made on Vue.js">    
-        <img class="framework" src="@/assets/icons/vue.png" alt="Vue">
-        <div class="button-box">
-          <div class="box">
-            <div class="bar"></div>
-              <router-link to="/contact">Take a look</router-link>
-            </div>
-          </div>
-      </div>
-
-      <div class="img-box proffy">
-        <img class="project" src="@/assets/projects/proffy.png" alt="Proffy was a project made on React.js">    
-        <img class="framework" src="@/assets/icons/react.svg" alt="React">
-        <div class="button-box">
-          <div class="box">
-            <div class="bar"></div>
-              <router-link to="/contact">Take a look</router-link>
-            </div>
-          </div>
-      </div>
-
     </section>
-
   </div>
 </template>
 
 <script>
+import {mapState} from "vuex"
 export default {
-  name: "Projects"
+  name: "HomePortfolio",
+  computed: {
+    ...mapState(["projects"])
+  }
+
 }
 </script>
 
 <style scoped>
 .wrapper {
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url("../assets/bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -100,82 +70,19 @@ export default {
 .img-box {
   width: 450px;
   height:600px;
-  background: rgba(255, 255, 255, 0.1);
   position: relative;
   cursor:pointer;
   box-shadow: 0 8px 16px rgba(0,0,0,0.8);
   border-radius: 10px;
 }
 
-
-.img-box.ranek {
-  grid-area: ranek;
-    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("../assets/projects/ranek-call.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  }
-
-.img-box.ranek:hover .framework {
-  top: 75%;
-  opacity: 1;
-}
-
-
-.img-box.ranek:hover .project {
-  top:30%;
-}
-
-
-.img-box.happy {
-  grid-area: happy;
-  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("../assets/projects/happy-call.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-box.happy:hover .framework {
-  top: 75%;
-  opacity: 1;
-}
-
-.img-box.happy:hover .project {
-  top:30%;
-}
-
-.img-box.techno {
-  grid-area: techno;
-  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("../assets/projects/techno-call.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-box.techno:hover .framework {
-  top: 75%;
-  opacity: 1;
-}
-
-.img-box.techno:hover .project {
-  top:30%;
-}
-
-.img-box.proffy {
-  grid-area: proffy;
-  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("../assets/projects/proffy-call.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.img-box.proffy:hover .framework {
-  top: 75%;
-  opacity: 1;
-}
-
-.img-box.proffy:hover .project {
-  top:30%;
+.img-box .background {
+  position: absolute;
+  height:100%;
+  width:100% ;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .img-box .project {
@@ -192,10 +99,8 @@ export default {
   position: relative;
   height: 100px;
   width: 100px;
-  opacity: 0;
-  top: 55%;
+  top: 80%;
   left: 40%;
-  transition: 0.3s ease-in-out;
 }
 
 .button-box {
@@ -230,8 +135,8 @@ a {
   color: #ec5b53;
   font-size: 1.7rem;
   width: 100%;
-  top: 5%;
-  left: 23%;
+  top: 6%;
+  left: 25%;
   text-decoration: none;
 }
 
@@ -257,7 +162,8 @@ a {
   }
 
   .content .img-box .framework {
-    left: 33%; ;
+    left: 33%;
+    top: 75%;
   }
 
   .button-box {
@@ -267,8 +173,7 @@ a {
   .button-box .box a {
     font-size: 1.5rem;
     top: 10%;
-    left: 16%;
+    left: 18%;
   }
 }
-
 </style>

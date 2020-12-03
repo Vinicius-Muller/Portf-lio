@@ -101,7 +101,7 @@ a {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -113,7 +113,9 @@ a {
 
 @media screen and (max-width:485px) {
   a {
-    left: 15%;
+    left: 18%;
+    font-size:1.5rem;
+    top:9%;
   }
 }
 

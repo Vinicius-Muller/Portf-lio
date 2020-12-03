@@ -4,7 +4,7 @@
     <div class="headline">
 
       <div class="title-box">
-        <p>Web Developer</p>
+        <p>Software Developer</p>
         <h1>Vinícius Muller</h1>
         <div class="box">
         <div class="bar"></div>
@@ -38,7 +38,7 @@ export default {
     HomePortfolio,
     Skills,
     Experience
-  },
+  }
 }
 </script>
 
@@ -138,7 +138,7 @@ a {
   }
 
   a {
-    left: 12%;
+    left: 10%;
   }
 }
 </style>
