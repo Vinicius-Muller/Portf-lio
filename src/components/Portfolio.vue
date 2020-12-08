@@ -21,25 +21,27 @@
 </template>
 
 <script>
-import {mapState} from "vuex"
+import { mapState } from 'vuex'
 export default {
-  name: "HomePortfolio",
-  computed: {
+  name: "Portfolio",
+  computed:{
     ...mapState(["projects"])
   }
-
 }
 </script>
 
 <style scoped>
 .wrapper {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url("../assets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .title {
@@ -68,8 +70,8 @@ export default {
 }
 
 .img-box {
-  width: 450px;
-  height:600px;
+  width: 400px;
+  height:500px;
   position: relative;
   cursor:pointer;
   box-shadow: 0 8px 16px rgba(0,0,0,0.8);
@@ -83,30 +85,45 @@ export default {
   opacity: 0.3;
   z-index: 0;
   pointer-events: none;
+  border-radius: 10px;
 }
 
 .img-box .project {
   position: absolute;
   width: 100%;
   z-index: 1;
-  top: 40%;
+  top: 50%;
   left: 0;
   right: 0;
   transition: 0.3s ease-in-out;
+  opacity:0;
+}
+
+
+.img-box:hover .project {
+  top: 30%;
+  opacity:1;
 }
 
 .img-box .framework {
   position: relative;
   height: 100px;
   width: 100px;
-  top: 80%;
+  top: 60%;
   left: 40%;
+  transition: 0.3s;
+  opacity: 0;
+}
+.img-box:hover .framework {
+  top: 75%;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
 }
 
 .button-box {
   display: flex;
   justify-content: center;
-  top: 70%;
+  top: 65%;
   position: relative;
 }
 
@@ -176,4 +193,5 @@ a {
     left: 18%;
   }
 }
+
 </style>

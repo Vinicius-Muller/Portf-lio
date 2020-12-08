@@ -17,7 +17,7 @@
     <div class="body-wrapper">
     <Skills />
 
-    <HomePortfolio />
+    <Portfolio />
 
 
     <Experience />
@@ -29,13 +29,13 @@
 <script>
 
 import Skills from "@/components/Skills.vue";
-import HomePortfolio from "@/components/HomePortfolio.vue";
+import Portfolio from "@/components/Portfolio.vue";
 import Experience from "@/components/Experience.vue";
 
 export default {
   name: 'Home',
   components: {
-    HomePortfolio,
+    Portfolio,
     Skills,
     Experience
   }
