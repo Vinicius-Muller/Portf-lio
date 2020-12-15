@@ -4,7 +4,7 @@
     <div class="headline">
 
       <div class="title-box">
-        <p>Software Developer</p>
+        <p>Web Developer</p>
         <h1>Vinícius Muller</h1>
         <div class="box">
         <div class="bar"></div>
