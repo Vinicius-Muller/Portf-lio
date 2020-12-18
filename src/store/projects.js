@@ -25,7 +25,7 @@ export default {
       {
         projectDescription:"Proffy was a project made on Vue.js",
         projectImage:"proffy.png",
-        frameworkImage:"vue,png",
+        frameworkImage:"vue.png",
         frameworkName: "Vue.js",
         backgroundImage:"proffy-call.png"
       }
