@@ -9,10 +9,10 @@ export default {
         backgroundImage:"ranek-call.png"
       },
       {
-        projectDescription:"Happy was a project made on React.js",
+        projectDescription:"Happy was a project made on Vue.js",
         projectImage:"happy.png",
-        frameworkImage:"react.svg",
-        frameworkName: "React.js",
+        frameworkImage:"vue.png",
+        frameworkName: "Vue.js",
         backgroundImage:"happy-call.png"
       },
       {
@@ -23,10 +23,10 @@ export default {
         backgroundImage:"techno-call.png"
       },
       {
-        projectDescription:"Proffy was a project made on React.js",
+        projectDescription:"Proffy was a project made on Vue.js",
         projectImage:"proffy.png",
-        frameworkImage:"react.svg",
-        frameworkName: "React.js",
+        frameworkImage:"vue,png",
+        frameworkName: "Vue.js",
         backgroundImage:"proffy-call.png"
       }
     ]
