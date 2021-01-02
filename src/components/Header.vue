@@ -9,7 +9,6 @@
     <nav class="nav-web">
       <ul>
         <li id="navs">
-          <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf" target="_blank">Resume</a>
         </li>
 
         <li id="navs">
