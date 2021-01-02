@@ -16,7 +16,6 @@
           <br>
           <li>JavaScript/ES6</li>
         </ul>
-        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf" target="_blank">Courses</a>
       </div>
     </div>
     <div class="card">
@@ -31,7 +30,6 @@
           <br>
           <li>PHP</li>
         </ul>
-        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf" target="_blank">Experience</a>
       </div>
     </div>
     <div class="card">
@@ -46,7 +44,6 @@
           <br>
           <li>React</li>
         </ul>
-        <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf" target="_blank">Knowledge</a>
       </div>
     </div>
   </div>
@@ -173,16 +170,7 @@ export default {
   opacity: 1;
 }
 
-.container .card .content a {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 8px 15px;
-  background: #fff;
-  color: #0c002b;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-}
+
 
 .container .card span {
   transition: 0.5;
