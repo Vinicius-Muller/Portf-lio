@@ -31,7 +31,7 @@ export default {
         frameworkImage:"vue.png",
         frameworkName: "Vue.js",
         backgroundImage:"happy-call.png",
-        link:"https://ranek.vercel.app/"
+        link:"https://happy-vue.vercel.app/"
       }
     ]
   }

@@ -29,9 +29,6 @@
 
       <nav class="nav-mobile">
              <ul>
-        <li id="navs">
-          <a href="http://www.viniciusmuller.com.br/curriculo/viniciusMullerResume.pdf">Resume</a>
-        </li>
 
         <li id="navs">
           <router-link to="/projects">Projects</router-link>
