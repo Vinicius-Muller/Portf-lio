@@ -11,7 +11,7 @@
           <div class="button-box">
           <div class="box">
             <div class="bar"></div>
-              <router-link to="/contact">Take a look</router-link>
+              <a :href="`${project.link}`">Take a look</a>
             </div>
           </div>
         </div>
