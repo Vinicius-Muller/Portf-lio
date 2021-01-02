@@ -11,7 +11,7 @@
           <div class="button-box">
           <div class="box">
             <div class="bar"></div>
-              <a :href="`${project.link}`">Take a look</a>
+              <a :href="`${project.link}`" target="_blank">Take a look</a>
             </div>
           </div>
         </div>
