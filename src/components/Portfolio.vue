@@ -7,7 +7,6 @@
         <div class="img-box">
           <img class="background" :src="require(`@/assets/projects/${project.backgroundImage}`)" :alt="project.projectDescription">
           <img class="project" :src="require(`@/assets/projects/${project.projectImage}`)" :alt="project.projectDescription" >
-          <img class="framework" :src="require(`@/assets/icons/${project.frameworkImage}`)" :alt="project.frameworkName" >
           <div class="button-box">
           <div class="box">
             <div class="bar"></div>
@@ -90,10 +89,11 @@ export default {
 
 .img-box .project {
   position: absolute;
-  width: 100%;
+  width: 60%;
+  height:85px;
   z-index: 1;
   top: 50%;
-  left: 0;
+  left: 20%;
   right: 0;
   transition: 0.3s ease-in-out;
   opacity:0;
@@ -105,20 +105,6 @@ export default {
   opacity:1;
 }
 
-.img-box .framework {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  top: 60%;
-  left: 40%;
-  transition: 0.3s;
-  opacity: 0;
-}
-.img-box:hover .framework {
-  top: 75%;
-  transition: 0.3s ease-in-out;
-  opacity: 1;
-}
 
 .button-box {
   display: flex;
@@ -176,11 +162,6 @@ a {
   .content .img-box {
     width: 300px;
     height: 500px ;
-  }
-
-  .content .img-box .framework {
-    left: 33%;
-    top: 75%;
   }
 
   .button-box {

@@ -2,36 +2,29 @@ export default {
   state: {
     projects:[
       {
-        projectDescription:"Ranek was a project made on vue.js",
-        projectImage:"ranek.png",
-        frameworkImage:"vue.png",
-        frameworkName: "Vue.js",
-        backgroundImage:"ranek-call.png",
-        link:"https://ranek.vercel.app/"
+        projectDescription:"upTOT the ideal solution to create your digital empire",
+        projectImage:"logo-uptot.png",
+        backgroundImage:"uptot.png",
+        link:"https://uptot.com.br/"
       },
       {
-        projectDescription:"Proffy was a project made on Vue.js",
-        projectImage:"proffy.png",
-        frameworkImage:"vue.png",
-        frameworkName: "Vue.js",
-        backgroundImage:"proffy-call.png",
-        link:"https://proffy-vue.vercel.app/"
+        projectDescription:"generating profits with savings",
+        projectImage:"logo-jpo.png",
+        backgroundImage:"jpo.png",
+        link:"https://agro.jpocomercial.com.br/"
       },
       {
-        projectDescription:"Techno was a project made on vue.js",
-        projectImage:"techno.png",
-        frameworkImage:"vue.png",
-        frameworkName: "Vue.js",
-        backgroundImage:"techno-call.png",
-        link:"https://techno-interface.vercel.app/"
+        projectDescription:"Change your life",
+        projectImage:"jean-logo.png",
+        backgroundImage:"jean.png",
+        link:"https://jeanricardosavedra.com/"
       },
+      
       {
-        projectDescription:"Happy was a project made on Vue.js",
-        projectImage:"happy.png",
-        frameworkImage:"vue.png",
-        frameworkName: "Vue.js",
-        backgroundImage:"happy-call.png",
-        link:"https://happy-vue.vercel.app/"
+        projectDescription:"Find a constellation of talents",
+        projectImage:"revista-santos-life.png",
+        backgroundImage:"magazine.png",
+        link:"https://revistasantoslife.com.br/"
       }
     ]
   }

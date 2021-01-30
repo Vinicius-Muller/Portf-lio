@@ -26,9 +26,9 @@
       <div class="content">
         <h2>BackEnd</h2>
         <ul>
-          <li>Node</li>
-          <br>
           <li>PHP</li>
+          <br>
+          <li>MySQL</li>
         </ul>
       </div>
     </div>

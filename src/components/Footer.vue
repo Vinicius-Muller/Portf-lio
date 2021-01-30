@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p>Vinícius Muller</p>
+    <p>Thank you for coming.</p>
   </div>
 </template>
  
